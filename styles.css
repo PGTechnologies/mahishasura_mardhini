@@ -152,7 +152,49 @@ button {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (max-width: 950px) and (max-height: 600px) {
+  html,
+  body {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .slideshow {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .backdrop,
+  .slideshow::after {
+    display: none;
+  }
+
+  .slide {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .controls {
+    position: static;
+    width: 100%;
+    padding:
+      14px max(18px, calc(env(safe-area-inset-right) + 4px))
+      max(14px, calc(env(safe-area-inset-bottom) + 4px))
+      max(18px, calc(env(safe-area-inset-left) + 4px));
+    background: #090704;
+  }
+
+  .next {
+    margin-left: auto;
+  }
+
   .nav-button {
     min-width: 52px;
     padding: 12px 17px;
