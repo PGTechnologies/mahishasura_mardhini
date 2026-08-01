@@ -1,0 +1,9 @@
+{
+  "name": "Mahishasura Mardhini",
+  "short_name": "Mardhini",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#090704",
+  "theme_color": "#090704"
+}
