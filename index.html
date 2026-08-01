@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090704" />
+    <title>Mahishasura Mardhini</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="slideshow" aria-label="Mahishasura Mardhini image slideshow">
+      <div class="backdrop" aria-hidden="true"></div>
+
+      <img
+        class="slide"
+        src="images/1.png"
+        alt="Mahishasura Mardhini story, slide 1 of 14"
+      />
+
+      <div class="slide-count" aria-live="polite">
+        <span id="current-slide">01</span>
+        <span class="divider" aria-hidden="true"></span>
+        <span>14</span>
+      </div>
+
+      <nav class="controls" aria-label="Slideshow navigation">
+        <button class="nav-button previous" type="button" aria-label="Previous image">
+          <span aria-hidden="true">&#8592;</span>
+          <span class="button-label">Previous</span>
+        </button>
+
+        <button class="nav-button next" type="button" aria-label="Next image">
+          <span class="button-label">Next</span>
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+      </nav>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
